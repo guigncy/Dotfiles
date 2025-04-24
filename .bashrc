@@ -1,20 +1,12 @@
-# ~/.bashrc
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# alias
-alias grep='grep --color=auto'
-alias ls='ls --color=auto -h'
-alias ll='ls -lh'
-alias la='ls -Ah'
-alias pacman='pacman --color=auto'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias pacman-clean='sudo pacman -Rns $(pacman -Qtdq)'
-alias please='sudo $(fc -ln -1)'  # Run the last command with sudo
+# Load aliases from a separate file
+if [ -f "$HOME/.aliases" ]; then
+    source "$HOME/.aliases"
+fi
 
-# Bash completion 
+# Bash completion
 if [ -f /usr/share/bash-completion/bash_completion ]; then
   . /usr/share/bash-completion/bash_completion
 fi

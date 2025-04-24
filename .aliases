@@ -1,0 +1,9 @@
+alias grep='grep --color=auto'
+alias ls='ls --color=auto -h'
+alias ll='ls -lh'
+alias la='ls -Ah'
+alias pacman='pacman --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias pacman-clean='sudo pacman -Rns $(pacman -Qtdq)'
+alias please='sudo $(fc -ln -1)'  # Run the last command with sudo
