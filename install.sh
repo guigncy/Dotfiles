@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$HOME/Dotfiles"
 FILES=(.bashrc .aliases .gitconfig .gitignore_global)
 
 for file in "${FILES[@]}"; do
